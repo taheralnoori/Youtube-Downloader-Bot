@@ -8,7 +8,7 @@ def probe(vid_file_path):
     @vid_file_path : The absolute (full) path of the video file, string.
     """
     if type(vid_file_path) != str:
-        raise Exception('Give ffprobe a full file path of the file')
+        raise Exception('امنح مسبار مسار الملف الكامل للملف')
 
     command = ["ffprobe",
                "-loglevel", "quiet",
