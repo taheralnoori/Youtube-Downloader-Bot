@@ -5,9 +5,11 @@ from pyrogram import Client, Filters, StopPropagation, InlineKeyboardButton, Inl
 async def start(client, message):
     # return
     joinButton = InlineKeyboardMarkup([
-        [InlineKeyboardButton("Channel", url="https://t.me/aryan_bots")],
+        [InlineKeyboardButton("🔰 قناة البوت", url="https://t.me/engineering_electrical9")],
         [InlineKeyboardButton(
-            "Report Bugs 😊", url="https://t.me/aryanvikash")]
+            "🗼 موسوعة المهندس الكهربائي", url="https://electrical-engineer-cc40b.web.app/")],
+        [InlineKeyboardButton(
+            "😴 مطور البوت", url="https://t.me/aryanvikash")]
     ])
     welcomed = f"Hey <b>{message.from_user.first_name}</b>\n/help for More info"
     await message.reply_text(welcomed, reply_markup=joinButton)
